@@ -1,6 +1,8 @@
 package process.controller;
 
 import process.model.PlayDohCircle;
+import  java.util.Scanner;
+
 public class ProcessController
 {
 	public void start()
@@ -14,7 +16,10 @@ public class ProcessController
 		System.out.println(firstCircle);
 		System.out.println(secondCircle);
 		
-		PlayDohCircle thirdCircle = new PlayDohCircle(10);
+		Scanner myScanner = new Scanner(System.in);
+		System.out.println("how big of a circle  do you want?");
+		int circleSize = myScanner.nextInt();
+		PlayDohCircle thirdCircle = new PlayDohCircle(circleSize);
 		System.out.println(thirdCircle);
 		
 		
